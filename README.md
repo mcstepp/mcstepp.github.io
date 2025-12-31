@@ -41,4 +41,4 @@ Might pull some data from APIs like last.fm. Just a `fetch()` and some DOM updat
 
 ## License
 
-MIT. View source. Take what you want.
+The Unlicense. View source. Take what you want.
