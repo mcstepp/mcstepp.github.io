@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>meg stepp: this page loaded faster than you can read this</title>
-  <style>
-    *, *::before, *::after {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meg stepp: this page loaded faster than you can read this</title>
+    <style>
+      *,
+      *::before,
+      *::after {
         box-sizing: border-box;
-    }
+      }
 
-    :root {
+      :root {
         --color-bg: #fafafa;
         --color-text: #1a1a1a;
         --color-text-muted: #666;
@@ -17,94 +19,130 @@
         --color-link-hover: #004999;
         --color-border: #e5e5e5;
         --color-tag-bg: #f0f0f0;
-        --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
         --font-mono: ui-monospace, "SF Mono", Menlo, Monaco, monospace;
         --width-content: 42rem;
-    }
+      }
 
-    @media (prefers-color-scheme: dark) {
-    :root {
-        --color-bg: #1a1a1a;
-        --color-text: #e5e5e5;
-        --color-text-muted: #999;
-        --color-link: #6db3f2;
-        --color-link-hover: #9fcaf8;
-        --color-border: #333;
-        --color-tag-bg: #2a2a2a;
-    }
-    }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --color-bg: #1a1a1a;
+          --color-text: #e5e5e5;
+          --color-text-muted: #999;
+          --color-link: #6db3f2;
+          --color-link-hover: #9fcaf8;
+          --color-border: #333;
+          --color-tag-bg: #2a2a2a;
+        }
+      }
 
-    html {
+      html {
         font-size: 18px;
         line-height: 1.6;
-    }
+      }
 
-    body {
-        margin: 1rem;
+      body {
+        margin: 4rem;
         font-family: var(--font-sans);
         background: var(--color-bg);
         color: var(--color-text);
-    }
+      }
 
-    a {
+      a {
         color: var(--color-link);
         text-decoration: none;
-    }
+      }
 
-    a:hover {
+      a:hover {
         color: var(--color-link-hover);
         text-decoration: underline;
-    }
+      }
 
-    .flex-container {
+      .flex-container {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-    }
+      }
 
-    @media (min-width: 768px) {
+      @media (min-width: 768px) {
         .flex-container {
-            flex-direction: row;
-            gap: 2rem;
+          flex-direction: row;
+          gap: 2rem;
         }
 
         .flex-item {
-            flex: 1;
+          flex: 1;
         }
-    }
-  </style>
-</head>
-<body>
-  <h1>it's not lazy; it's intentional</h1>
-  <!-- About Me -->
-  <h2>i swear i know javascript</h2>
-  <p>I'm Meg Stepp. I'm a software engineer at <a href="http://unkey.com">Unkey</a>. When I'm not writing code, 
-    I'm writing blog posts, playing video games, building Legos, reading sci-fi or nonfiction, working out, cooking/baking, 
-    lurking on Reddit, and collecting new hobbies and interests like Pokemon. Professionally skilled in technical leadership, 
-    architecture and system design, javascript, python, php, user experience, developer experience, engineering management, and 
-    a bunch of other stuff, except Go. Everything I know about Go I learned against my will.
-</p>
-<p>Connect with me on <a href="https://www.linkedin.com/in/meg-stepp/">LinkedIn</a> and <a href="https://github.com/mcstepp">Github</a>.</p>
+      }
 
-  <div class="flex-container">
-    <!-- things to read -->
-    <div class="flex-item">
-      <h2>things i wrote down for some reason</h2>
-      <ul>
-        <li>a blog post about building a blog <i>(coming soon)</i></li>
-      </ul>
+      /* utils */
+      .text-center {
+        text-align: center;
+      }
+
+      .p-2 {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center">it's not lazy; it's intentional</h1>
+
+    <div class="flex-container">
+      <div class="flex-item p-2">
+            <!-- About Me -->
+    <h2>i swear i know javascript</h2>
+        <p>
+          I'm Meg Stepp. I'm a software engineer at
+          <a href="http://unkey.com">Unkey</a>. When I'm not writing code, I'm
+          (sometimes) writing blog posts, playing video games, building Legos,
+          reading sci-fi or nonfiction, picking up heavy things and putting them
+          back down, participating in consensual violence, cooking/baking,
+          lurking on Reddit, and otherwise collecting new hobbies and interests
+          like Pokemon.
+        </p>
+
+        <p>
+          Connect with me on
+          <a href="https://www.linkedin.com/in/meg-stepp/">LinkedIn</a> and
+          <a href="https://github.com/mcstepp">Github</a>.
+        </p>
+        <p>Professionally skilled in:</p>
+        <ul>
+          <li>technical leadership and engineering management</li>
+          <li>architecture and system design</li>
+          <li>accessibility</li>
+          <li>user experience and developer experience</li>
+          <li>Agile (CSM I)</li>
+          <li>Javascript (NextJS, NodeJS, React, Vue, Typescript mostly)</li>
+          <li>Python</li>
+          <li>PHP</li>
+          <li>Go (against my will, but maybe one day I'll love it)</li>
+          <li>other stuff you can find on my linkedin</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- projects -->
-    <div class="flex-item">
-      <h2>optimized for view-source (or open source)</h2>
-      <ul>
-        <li>
-          bare bones blog. hugo. that's it. that's the stack. <i>(coming soon)</i>
-        </li>
-      </ul>
-    </div>
-  </div>
+    <div class="flex-container">
+      <!-- things to read -->
+      <div class="flex-item">
+        <h2>things i wrote down for some reason</h2>
+        <ul>
+          <li>a blog post about building a blog <i>(coming soon)</i></li>
+        </ul>
+      </div>
 
-</body>
+      <!-- projects -->
+      <div class="flex-item">
+        <h2>optimized for view-source (or open source)</h2>
+        <ul>
+          <li>
+            bare bones blog. hugo. that's it. that's the stack.
+            <i>(coming soon)</i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
